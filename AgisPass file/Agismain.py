@@ -12,7 +12,7 @@ print("========================================")
 lua_chon = input("\n👉 Nhập lựa chọn của bạn (1 hoặc 2): ")
 
 if lua_chon == "1":
-    # === GIỮ NGUYÊN CODE CỦA BẠN ===
+    
     do_dai = int(input("\n😍 Nhập độ dài mật khẩu bạn muốn (tối thiểu 4): "))
 
     if do_dai < 4:
@@ -60,7 +60,7 @@ if lua_chon == "1":
         print("Cảm ơn bạn đã dùng phần mềm của Victoria! ✨\n")
 
 elif lua_chon == "2":
-    # === PHẦN BỔ SUNG KIỂM TRA MẬT KHẨU KHÁCH ===
+    
     mk_khach = input("\n🔍 Nhập mật khẩu bạn muốn kiểm tra: ")
 
     co_chu_thuong = False
@@ -68,7 +68,7 @@ elif lua_chon == "2":
     co_so = False
     co_ky_tu_db = False
 
-    # Dò từng ký tự trong mật khẩu khách nhập
+    
     for ky_tu in mk_khach:
         if ky_tu in string.ascii_lowercase:
             co_chu_thuong = True
@@ -79,7 +79,7 @@ elif lua_chon == "2":
         elif ky_tu in string.punctuation:
             co_ky_tu_db = True
 
-    # Chấm điểm số loại ký tự có mặt
+    
     diem = 0
     if co_chu_thuong: diem += 1
     if co_chu_hoa: diem += 1
@@ -88,7 +88,7 @@ elif lua_chon == "2":
 
     print("\n⏳ Đang kiểm tra mật khẩu...")
 
-    # Đánh giá dựa theo độ dài len() và số điểm
+    
     if len(mk_khach) < 8 or diem <= 2:
         do_manh = "YẾU 😎 (Ai không biết công nghệ cũng hack được nha!)"
     elif len(mk_khach) <= 11 or diem == 3:
