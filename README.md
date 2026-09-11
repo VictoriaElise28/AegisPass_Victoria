@@ -1,5 +1,5 @@
 🛡️ AegisPass - Phiên Bản Victoria
-   Tác giả: Nguyễn Xuân Phúc
+🎩 Tác giả: Nguyễn Xuân Phúc
 
 📝 Giới thiệu
 
